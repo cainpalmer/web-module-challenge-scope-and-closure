@@ -31,11 +31,15 @@ console.log(processFirstItem(['foo','bar'],function(str){return str+str}));
   Study the code for counter1 and counter2, then answer the questions below.
   
   1. What is the difference between counter1 and counter2?
-  
+  The coutner1 code uses a closure while the counter2 code does not.
+
   2. Which of the two uses a closure? How can you tell?
-  
+  The counter1 code uses a closure. It is easy to tell because the code refrences a function called counterMaker, and then refrences that function again at a later time.
+
   3. In what scenario would the counter1 code be preferable? In what scenario would 
      counter2 be better?  
+  The coutner1 code is preferable in most cases. The only time the counter2 code would be preferable is in a case where we needed to access the count variable globally.
+     
 */
 
 // counter1 code
